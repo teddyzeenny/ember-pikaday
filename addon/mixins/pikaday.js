@@ -1,6 +1,6 @@
 /* globals Pikaday */
 import Ember from 'ember';
-import moment from 'moment';
+const { moment } = window;
 
 const {
   isPresent,
