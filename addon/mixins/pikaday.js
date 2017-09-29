@@ -41,6 +41,8 @@ export default Ember.Mixin.create({
     }
   }),
 
+  keyboardInput: true,
+
   _defaultOptions() {
     const firstDay = this.get('firstDay');
 
@@ -57,7 +59,8 @@ export default Ember.Mixin.create({
       yearRange: this.determineYearRange(),
       minDate: this.get('minDate') || null,
       maxDate: this.get('maxDate') || null,
-      theme: this.get('theme') || null
+      theme: this.get('theme') || null,
+      keyboardInput: this.get('keyboardInput')
     };
   },
 
